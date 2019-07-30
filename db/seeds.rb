@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+l = Location.create(name: "Pune")
+l.recordings.create(temp: 32, status: "cloudy")
+l.recordings.create(temp: 35, status: "sunny")
+l.recordings.create(temp: 29, status: "sunny")
+l.recordings.create(temp: 30, status: "rainy")
+l.recordings.create(temp: 23, status: "thunderstorms")
